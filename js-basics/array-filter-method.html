@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var ages = [50,12,19,20];
+            document.write(ages + "<br><br>");
+            // filter(function_name); // creates an array filled with all array elemments that pass a condition
+            var b = ages.filter(checkAdult);
+            document.write(b + "<br><br>");
+
+            function checkAdult(age){
+                return age >= 18;
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var a = ["Emon", "Shimul", "Anaf", "Hitesh"];
+
+            a.forEach(function(value){
+                document.write(value + "<br>");
+            });
+
+            document.write("<br><br>");
+
+            a.forEach(function(value, index){
+                document.write(index + ": " + value + "<br>");
+            });
+
+            document.write("<br><br>Another way: <br>");
+
+            a.forEach(loop);
+            function loop(value){
+                document.write(value + "<br>");
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
