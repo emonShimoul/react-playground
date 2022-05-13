@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            document.write("<b>Array slice() method example:</b> <br><br>");
+            var a = ["sanjay", "Aman", "Rehman", "Rahul", "Karan"];
+            document.write(a + "<br><br>");
+            // slice( start, end )
+            var b = a.slice(1, 3);
+            var c = a.slice(-3, -1);
+            document.write(b + "<br><br>");
+            document.write(c + "<br><br>");
+
+
+            document.write("<b>Array splice() method example:</b> <br><br>");
+            var x = ["Emon", "Shimul", "Hitesh", "Vijay"];
+            document.write(x + "<br><br>");
+            // splice( index, howmany(delete), "new value"(optional) )
+            x.splice(2, 0, "Kabir", "Anaf");
+            document.write(x + "<br><br>");
+            x.splice(2, 2, "Kiara");
+            document.write(x + "<br><br>");
+            x.splice(2,3);
+            document.write(x + "<br><br>");
+
+
+            document.write("<b>Array isArray() method example:</b> <br><br>");
+            // var p = ["Emon", "Shimul", "Hitesh", "Vijay"];
+            var p = 20;
+            if(Array.isArray(p)){
+                document.write("This is an Array");
+            }else{
+                document.write("This is not an Array");
+            }
+
+
+            document.write("<br><br> <b>Array indexOf() method example:</b> <br><br>");
+            var s = ["Emon", "Anaf", "Shimul", "Hitesh", "Shimul", "Vijay"];
+            document.write(s + "<br><br>");
+            // indexOf("search item", start)
+            var t = s.indexOf("Shimul");
+            document.write(t + "<br><br>");
+            var u = s.indexOf("Shimul", 3);
+            document.write(u + "<br><br>");
+            var v = s.indexOf("abc", 3);
+            document.write(v + "<br><br>");
+            var w = s.lastIndexOf("Shimul");
+            document.write(w + "<br><br>");
+            var w = s.lastIndexOf("Shimul",5);
+            document.write(w + "<br><br>");
+            var w = s.lastIndexOf("abc");
+            document.write(w + "<br><br>");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

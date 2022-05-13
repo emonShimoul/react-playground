@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var ages = [10, 13, 29, 20];
+            document.write(ages + "<br><br>");
+            // find(function_name); // returns the value of the first element in an array that pass a condition
+            var b = ages.find(checkAdult);
+            document.write(b + "<br><br>");
+
+            function checkAdult(age){
+                return age >= 18;
+            }
+
+            // findIndex(function_name); // returns the index of the first element in an array that pass a condition
+            var c = ages.findIndex(checkAdultIndex);
+            document.write(c + "<br><br>");
+            function checkAdultIndex(age){
+                return age >= 18;
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

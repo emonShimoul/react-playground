@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            document.write("<b>Array includes() method example:</b> <br><br>");
+            var a = ["Sanjay", "Aman", "Rehman", "Rahul"];
+            document.write(a + "<br><br>");
+            var b = a.includes("Aman");
+            document.write(b + "<br><br>");
+            var c = a.includes("aman");
+            document.write(c + "<br><br>");
+
+            document.write("<b>Array some() method example:</b> <br><br>");
+            // var ages = [10, 13, 15, 2];
+            var ages = [10, 19, 15, 23];
+            document.write(ages + "<br><br>");
+            var d = ages.some(checkAdult);
+            document.write(d + "<br><br>");
+            function checkAdult(age){
+                return age >= 18;
+            }
+
+            document.write("<b>Array every() method example:</b> <br><br>");
+            var classes = [10, 21, 15, 52];
+            // var classes = [20, 19, 25, 23];
+            document.write(classes + "<br><br>");
+            var e = classes.every(checkAdult);
+            document.write(e + "<br><br>");
+            function checkAdult(cl){
+                return cl >= 18;
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
