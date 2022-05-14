@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var now = new Date();
+            var now1 = new Date('January 5 2010');
+            document.write(now + "<br>");
+            document.write(now1 + "<br>");
+            document.write(now.toDateString() + "<br>");
+            document.write("Get related methods:<br>");
+            document.write(now.getDate() + "<br>");
+            document.write(now.getFullYear() + "<br>");
+            document.write(now.getMonth() + "<br>");
+            document.write(now.getDay() + "<br>");
+            document.write(now.getHours() + "<br>");
+            document.write(now.getMinutes() + "<br>");
+            document.write(now.getSeconds() + "<br>");
+            document.write(now.getMilliseconds() + "<br>");
+
+            document.write(now.getDate() + " / " + now.getMonth() + " / " + now.getFullYear() + "<br>");
+
+
+            var futureDate = new Date();
+            document.write("<br>Set related methods:<br>");
+            // futureDate.setDate(20);
+            futureDate.setFullYear(2022);
+            // futureDate.setMonth(4);
+            // futureDate.setHours(14);
+            // futureDate.setSeconds(14);
+            // futureDate.setMilliseconds(14);
+            document.write(futureDate + "<br>");
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
