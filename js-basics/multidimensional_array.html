@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var ary = [
+                ["Harry", 18, "Male", "B.Com"],
+                ["Sunny", 19, "Male", "BCA"],
+                ["Sarah", 18, "Male", "B.Com"],
+                ["Tom", 17, "Male", "BCA"],
+                ["Mac", 17, "Male", "B.A."]
+            ];
+
+            document.write("<table border='1px' cellspacing=0>");
+            for (let a = 0; a < ary.length; a++) {
+                document.write("<tr>");
+                    for (let b = 0; b < ary[a].length; b++){
+                        document.write("<td>" + ary[a][b] + "</td>");
+                    }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
