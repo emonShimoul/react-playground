@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var str = "JavaScript is a beautiful language. Python is also a wonderful language.";
+            var a = str.length;
+            document.write(a + "<br>");
+
+            var b = str.toLowerCase();
+            document.write(b + "<br>");
+
+            var c = str.toUpperCase();
+            document.write(c + "<br>");
+
+            var d = str.includes("aut");
+            document.write(d + "<br>");
+
+            var e = str.startsWith("Java");
+            document.write(e + "<br>");
+
+            var f = str.endsWith("age");
+            document.write(f + "<br>");
+
+            var g = str.search("age");   // returns the index (position) of the string.
+            document.write(g + "<br>");
+
+            var h = str.match(/is/g);  // use regular expression. returns an array of the searching string.
+            document.write(h + "<br>");
+
+            var i = str.indexOf("is"); // returns first position of a string.
+            document.write(i + "<br>");
+
+            var j = str.lastIndexOf("is"); // returns last position of a string.
+            document.write(j + "<br>");
+
+            var k = str.replace("JavaScript", "JS");
+            document.write(k + "<br>");
+
+            var l = str.replace(/is/g, "are"); // for replacing in multiple place use regular expression.
+            document.write(l + "<br>");
+
+            var m = str.charAt(0); // returns the string of the position given as parameter.
+            document.write(m + "<br>");
+
+            var n = str.charCodeAt(0); // returns ASCII code of the string thats position given as parameter.
+            document.write("ASCII code of J: " + n + "<br>");
+
+            var o = String.fromCharCode(65); // returns the character of the ASCII code given as parameter.
+            document.write("The character is: " + o + "<br>"); 
+
+            var str1 = "JS "; 
+            var str2 = "Python "; 
+            var str3 = "PHP ";
+            var p = str1.concat(str2,str3);
+            document.write("The string after concatenation: " + p + "<br>"); 
+            
+            var q = str.split("i");
+            document.write(q + "<br>");
+
+            var r = str2.repeat(3);
+            document.write(r + "<br>");
+
+            // var s = str.slice(7);
+            var s = str.slice(7, 15); // returns 7th to 15th position's character.
+            // var s = str.slice(-7);
+            document.write(s + "<br>");
+
+            var t = str.substr(7, 15); // starts from 7th. Use 7th and count 15 character from 7th position. 
+            document.write(t + "<br>");
+
+            var u = str.substring(7, 15);
+            document.write(u + "<br>"); // returns 7th to 14th position's character.
+            
+            var str4 = 20;
+            var v = str4.toString(); // convert in the string.
+            document.write(str4 + 50 + "<br>");
+            document.write(v + 50 + "<br>");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

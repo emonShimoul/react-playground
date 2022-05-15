@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            var a = {
+                fname : 'Emon',
+                lname : 'Shimul',
+                age : 27,
+                email : 'emon@shimul.com',
+                fav : ['Hitesh', 'Vijay', 'Rashmika'],
+                living : {
+                    'city' : 'Khulna',
+                    'country' : 'Bangladesh'
+                },
+                salary : function(){
+                    return 25000;
+                },
+                fullname : function(){
+                    return this.fname + " " + this.lname;
+                }
+            }
+
+            document.write(a.email + "<br><br>");
+            document.write(a.fav + "<br><br>");
+            document.write(a.salary() + "<br><br>");
+            document.write(a.fullname() + "<br><br>");
+            document.write(a.living.city + "<br><br>");
+
+
+
+            // 2nd way of defining an object.
+            var b = new Object();
+            b.Name = "Ram";
+            b.age = 27;
+            document.write(b.age);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
