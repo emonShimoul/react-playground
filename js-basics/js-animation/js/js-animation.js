@@ -19,10 +19,19 @@
 
 // *********** setTimeout() and clearTimeout() method (run just one time) ***************
 
-var id2 = setTimeout(Anim2, 5000);
+// var id2 = setTimeout(Anim2, 5000);
 
-function Anim2(){
+// function Anim2(){
+//     var target = document.getElementById("test");
+//     target.style.width = '500px';
+// }
+
+var id2 = setTimeout(function(){
     var target = document.getElementById("test");
     target.style.width = '500px';
-}
+}, 5000);
 
+
+function stopAnimation(){
+    clearTimeout(id2);
+}
