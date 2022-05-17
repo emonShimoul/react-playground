@@ -29,10 +29,15 @@ var element;
 // document.getElementById("header").setAttribute("class", "xyz");
 // document.getElementById("header").attributes[1].value = "xyz";
 
-// document.getElementById("header").setAttribute("style", "border: 1px solid green");
+document.getElementById("header").setAttribute("style", "border: 1px solid green");
 
-document.getElementById("header").removeAttribute("class");
+// document.getElementById("header").removeAttribute("class");
 
+element = document.querySelector(".list");
+element = document.querySelectorAll(".list");
+element = document.querySelectorAll(".list")[1];
+element = document.querySelectorAll("ul")[0].innerHTML;
+element = document.querySelectorAll("#header h1");
 
 
 
