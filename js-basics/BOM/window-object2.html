@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <h1>JS: Location Object</h1>
+    <button onclick="newFunction()">Click</button>
+    <button onclick="reloadFunction()">Reload</button>
+    <button onclick="assignFunction()">Assign</button>
+    <button onclick="replaceFunction()">Replace</button>
+</body>
+
+<script>
+    // console.log(location.host);
+    // console.log(location.hostname);
+    // console.log(location.href);
+    // console.log(location.port);
+    // console.log(location.protocol);
+    // console.log(location.hash);
+    // console.log(location.search);
+
+    // document.write(location.href + "<br>");
+    // document.write(location.port + "<br>");
+    // document.write(location.portocol + "<br>");
+
+    function newFunction(){
+        location.href = "https://github.com/";
+    }
+
+    function reloadFunction(){
+        location.reload();
+    }
+
+    function assignFunction(){
+        location.assign("https://www.youtube.com/");
+    }
+
+    function replaceFunction(){
+        location.replace("https://www.youtube.com/");
+    }
+</script>
+</html>
