@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS</title>
+</head>
+<body>
+    <h1>JS: History Object</h1>
+
+    <button onclick="backFunction()">Back</button>
+    <button onclick="forwardFunction()">Forward</button>
+    <button onclick="goFunction()">Go</button>
+</body>
+
+<script>
+    function backFunction(){
+        history.back();
+    }
+
+    function forwardFunction(){
+        history.forward();
+    }
+
+    function goFunction(){
+        // history.go(1); // go to forward
+        // history.go(3); // go to 3 page forward
+        history.go(-1); // go to backward
+        // history.go(-2); // go to 2 page backward
+    }
+</script>
+</html>
