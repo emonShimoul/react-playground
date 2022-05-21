@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body onresize="resizeFunction()">
+    
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+    <button onclick="moveWindow()">Move Window</button>
+    <button onclick="resizeWindow()">Resize Window</button>
+    <script>
+        function resizeFunction(){
+            console.clear();
+            var iHeight = window.innerHeight;
+            console.log("Inner Height: " + iHeight);
+
+            var oHeight = window.outerHeight;
+            console.log("Outer Height: " + oHeight);
+
+            var iWidth = window.innerWidth;
+            console.log("Inner Width: " + iWidth);
+
+            var oWidth = window.outerWidth;
+            console.log("Outer Width: " + oWidth);
+        }
+
+        var myWindow;
+
+        function openWindow(){
+            // myWindow = window.open("https://github.com/");
+            myWindow = window.open("","","width=200px,height=200px");
+            myWindow.document.write("<p>This is my window.</p>");
+        }
+        function closeWindow(){
+            myWindow.close();
+        }
+        function moveWindow(){
+            // myWindow.moveTo(2500,300);
+            myWindow.moveBy(200,200);
+            myWindow.focus();
+        }
+        function resizeWindow(){
+            // myWindow.resizeTo(400,400);
+            myWindow.resizeBy(400,400);
+        }
+    </script>
+</body>
+</html>
