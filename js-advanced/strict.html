@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Strict Mode</title>
+    <script>
+        "use strict";
+
+        // var a = 10;
+        // console.log(a);               // here is an error. but not visible without using the "strict" mode
+
+        // function test1(){
+        //     b = 20;                   // here is an error. but not visible without using the "strict" mode
+        // }
+
+        function test2(a,b,b){           // here is an error. but not visible without using the "strict" mode
+            console.log(a + b + b);
+        }
+
+        // test1();
+        test2(10, 20, 30);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
