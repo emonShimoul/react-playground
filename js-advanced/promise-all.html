@@ -49,6 +49,24 @@
             }
         };
 
+        let p4 = new Promise(promiseCall(40,"fourth"));
+        let p5 = new Promise(promiseCall(50,"fifth"));
+        let p6 = new Promise(promiseCall(60,"sixth"));
+        let p7 = new Promise(function(resolve, reject) {
+            reject("The seventh promise has rejected");
+        });
+
+        var total = 0;
+        Promise.all([p4,p5,p6,p7]).then((result) => {
+
+            for(var i in result) { total += result[i]; }
+
+            console.log(`Results: ${result}`);
+            console.log(`Total: ${total}`);
+        }).catch((error) => {
+            console.log(`Error: ${error}`);
+        });
+
     </script>
 </head>
 <body>
