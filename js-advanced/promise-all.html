@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance JS</title>
+    <script>
+        let p1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('The first promise has resolved');
+                resolve(10);
+            }, 1*1000);
+        });
+
+        let p2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                // console.log('The second promise has resolved');
+                console.log('The second promise has failed');
+                // resolve(10);
+                reject("Failed..");
+            }, 2*1000);
+        });
+
+        let p3 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('The third promise has resolved');
+                resolve(10);
+            }, 3*1000);
+        });
+
+        var total = 0;
+        Promise.all([p1,p2,p3]).then((result) => {
+
+            for(var i in result) { total += result[i]; }
+
+            console.log(`Results: ${result}`);
+            console.log(`Total: ${total}`);
+        }).catch((error) => {
+            console.log(`Error: ${error}`);
+        });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
