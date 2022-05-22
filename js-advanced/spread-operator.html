@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        function sum(name,course, ...args){      // ...args is REST operator
+            document.write(`Hello ${name} of ${course} : `);
+            console.log(arguments);
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        var arr = [30,40,10,20];
+        sum("Hitesh Vijay","IT", arr);
+        sum("Hitesh Vijay","IT", ...arr);       // ...arr is SPREAD operator
+
+        console.log(arr);
+        console.log(...arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
