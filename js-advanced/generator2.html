@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Generator 2nd</title>
+    <script>
+        function *generateIt(){
+            // let result = (yield) * 10;
+            // let yArray = [yield, yield, yield];
+            // console.log(`Result : ${yArray}`);
+            // console.log(`Result : ${yArray[2]}`);
+
+            yield "JavScript";
+            yield "Node";
+            yield "Angular";
+            yield "React";
+            // yield ['Node','Angular','React'];
+            // yield *['Node','Angular','React'];          // differentiate the value
+        }
+
+        let g = generateIt();
+        // g.next();         // call the generator function.
+        // g.next(500);       // pass the value in the yield og the function. 
+        // g.next("Hello JS");
+        // g.next(700);
+        // g.next(800);
+
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+        console.log(g.next().value);
+        console.log(g.return('Ending Now').value);  // ends the generator function, that means after that no line will be executed
+        console.log(g.next().value);
+        // console.log([...g]);            // using spread operator
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
