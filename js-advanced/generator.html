@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Generator</title>
+    <script>
+        function *generateIt(){
+            // yield 'Yield no 1';
+            // yield 'Yield no 2';
+            // yield 'Yield no 3';
+
+            let nextNum = 300;
+            while (true) {
+                yield(nextNum++);
+            }
+        }
+
+        let g = generateIt();
+        // console.log(g.next());
+        // console.log(g.next().value);
+        // g.next();
+        // console.log(g.next());
+        // console.log(g.next().value);
+
+        for (let value of g){
+            if(value > 307) break;
+            console.log(value);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
