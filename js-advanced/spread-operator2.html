@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        var arr1 = [10,20,30,40];
+        var arr2 = arr1;
+        arr1.push(50); 
+        console.log(arr2);
+
+        var arr3 = [10,20,30,40];
+        var arr4 = [...arr3];
+        arr3.push(50); 
+        console.log(arr4);
+
+
+        // Concatenation
+        var arr5 = [10,20,30,40];
+        var arr6 = [50,60];
+        var arr7 = arr5.concat(arr6);     // concate using normal function
+        var arr8 = [...arr5, ...arr6];    // concate using spread operator
+        var arr9 = [...arr6, ...arr5];    // change the sequence
+        var arr10 = [0,...arr6, ...arr5,70];    // add some other value
+        console.log("Concatenation:");
+        console.log(arr8);
+        console.log(arr9);
+        console.log(arr10);
+
+
+        // Using with objects
+        var obj1 = {
+            name : "Emon Shimul",
+            course : "CSE"
+        };
+        var obj2 = {
+            age : 25
+        };
+
+        var obj3 = {...obj1, ...obj2};
+        console.log("Using with Object:");
+        console.log(obj3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
