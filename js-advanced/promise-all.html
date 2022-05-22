@@ -37,6 +37,18 @@
             console.log(`Error: ${error}`);
         });
 
+
+        // same time promises can be written in the short form. second way of writing upperside code:
+
+        let promiseCall = function(returnData, message) {
+            return function(resolve, reject){
+                setTimeout(() => {
+                console.log(`The ${message} promise has resolved`);
+                resolve(returnData);
+                }, returnData*100);
+            }
+        };
+
     </script>
 </head>
 <body>
