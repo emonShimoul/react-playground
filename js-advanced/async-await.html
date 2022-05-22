@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Async and Await</title>
+    <script>
+        //Async Function Example
+        /*
+        let test1 = async () => "Hello Everyone!!";
+
+        test1().then((result) => {
+            console.log(result);
+        });
+        */
+
+
+        // Await Method Example
+        /*
+        async function test2(){
+            console.log("2 : Message");
+            await console.log("3 : Message");
+            console.log("4 : Message");
+        }
+
+        console.log("1 : Message");
+        test2();
+        console.log("5 : Message");
+        */
+
+
+        // Another example of Async and Await
+        async function test3(){
+            try{
+                const response = await fetch("json/student_data.json");
+                const students = response.json();
+                return students;
+
+                // return(await fetch("json/student_data.json")).json();
+            }catch(error){
+                console.log("This is an error");
+            }
+        }
+
+        test3().then((res) => {
+            console.log(res);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
