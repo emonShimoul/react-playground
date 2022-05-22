@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let id1 = Symbol("Hello");      // Symbol is a special data type and its value is totally unique
+        let id2 = Symbol("Hello");
+
+        // console.log(id1);
+        // console.log(id1 == id2);
+        // console.log(typeof id1);
+
+        // alert(id1.toString());     // to use symbols in the document it have to convert into a string
+        // document.write(id1.description);     // to display only the value in the symbol 
+
+
+
+        // use symbol in the object
+        let age = Symbol("age");
+        let age1 = Symbol("age1");
+        let age1String = age1.toString();
+
+        let user = {
+            name : 'Emon Shimul',
+            class : 'CSE',
+            [age] : 25          // For using the symbol in the object square bracket is needed 
+        };
+
+        // user[age1] = 28;        // another way of using symbol in the object
+        user[age1String] = 28;        // another way of using symbol in the object
+    
+        user["gender"] = "Male";
+
+        console.log(user);
+        console.log(JSON.stringify(user));    // convert in the JSON. But it also skip the object value. To convert symbol as a object in the json it has to convert into string first. 
+
+        /*
+        for(let key in user){
+            console.log(key);    // do not display the symbol's value. Symbol can't be used in the for-in loop.
+        }
+        */
+
+        // console.log(user.name);
+        // console.log(user[age]);   // to displaye the symbol object value
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
