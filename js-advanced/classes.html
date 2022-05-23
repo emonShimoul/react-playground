@@ -31,8 +31,8 @@
 
             // prototype method
             hello1(){
-                console.log("Hello " + this.studentName + ", your age is " + this.studentAge);
-                
+                // console.log("Hello " + this.studentName + ", your age is " + this.studentAge);
+                console.log(`Hello ${this.studentName}, your age is ${this.studentAge}.`);
             }
 
             // static method
@@ -42,8 +42,10 @@
         }
 
         let s = new student("Vijay Hitesh", 32);
-        s.studentName = "Emon Shimul";      // Assign value without parameter in the constructor
+        let s1 = new student("Emon Shimul", 28);
+        // s.studentName = "Emon Shimul";      // Assign value without parameter in the constructor
         s.hello1();
+        s1.hello1();
         student.staticMethod();
     </script>
 </head>
