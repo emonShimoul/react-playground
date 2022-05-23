@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Iterator</title>
+</head>
+<body>
+    <script>
+        let numbers = [100,200,300,400,500,600,700,700];
+
+        let iter = numbers[Symbol.iterator]();
+
+        let result = iter.next();
+        console.log(iter.next());
+        console.log(iter.next().value);       // print only the value
+        console.log(iter.next().done);       // print only the done property
+
+        while (!result.done) {                // here result.done = false 
+            console.log(result.value);
+            result = iter.next();
+        }
+
+
+        
+        let str = "Emonn Shimulll";     // iterator can be used with string , object etc
+
+        let iterStr = str[Symbol.iterator]();
+        let strResult = iterStr.next();
+        while (!strResult.done) {                // here strResult.done = false 
+            console.log(strResult.value);
+            strResult = iterStr.next();
+        }
+
+    </script>
+</body>
+</html>
