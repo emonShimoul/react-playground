@@ -19,7 +19,32 @@
         a.message();
         a.sorry();
 
-        
+
+        class student{
+            // constructor method
+            constructor(name, age){
+                // let studentName;              // used when there is no parameter in the constructor
+                this.studentName = name;
+                this.studentAge = age;
+                console.log("Constructor Function");
+            }
+
+            // prototype method
+            hello1(){
+                console.log("Hello " + this.studentName + ", your age is " + this.studentAge);
+                
+            }
+
+            // static method
+            static staticMethod(){
+                console.log("Static Function");
+            }
+        }
+
+        let s = new student("Vijay Hitesh", 32);
+        s.studentName = "Emon Shimul";      // Assign value without parameter in the constructor
+        s.hello1();
+        student.staticMethod();
     </script>
 </head>
 <body>
