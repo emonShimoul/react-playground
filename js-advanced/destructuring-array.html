@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        let user = ["Emon Shimul", 22 , "Khulna"];
+        // let user = ["Emon Shimul", 22 , "Khulna", ["Male", 25000]];
+
+        let [name, age, city] = user;
+        // let [name, age = 20, city] = user;
+        // let [name, age = 20, city, [gender, salary]] = user;
+        // let [name, ...args] = user;
+
+        console.log(name);
+        console.log(age);
+        console.log(city);
+        // console.log(gender);
+        // console.log(salary);
+        // console.log(args);
+        
+        // Using Function
+        console.log("Using Function:");
+        function userFunction([name, age, city]){
+            console.log(name);
+            console.log(age);
+            console.log(city);
+        }
+        userFunction(["Hitesh Vijay", 32, "Delhi"]);
+
+
+        // Another example using function
+        console.log("Using Function:");
+        function userFunction2(){
+            return ["Rashmika", 30, "Mumbai"];
+        }
+        let [name1, age1, city1] = userFunction2();
+        console.log(name1);
+        console.log(city1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
