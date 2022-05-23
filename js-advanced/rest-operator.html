@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        // using arguments object 
+        document.write("<br>Using arguments Object:<br><br>");
+        function sum(){
+            console.log(arguments);
+            let sum = 0;
+            for(let i in arguments){
+                sum += arguments[i];
+            }
+            document.write(sum + "<br>");
+        }
+        sum(20,30,40);
+        sum("Emon Shimul",20,30);
+
+
+        // using rest operator
+        document.write("<br><br>Using REST Operator:<br><br>");
+        function sum2(name,course, ...args){
+            document.write(`Hello ${name} of ${course} : <br>`);
+            console.log(arguments);
+            let sum2 = 0;
+            for(let i in args){
+                sum2 += args[i];
+            }
+            document.write(sum2 + "<br>");
+        }
+        sum2("Hitesh Vijay","IT",30,40,10,20);
+        sum2("Emon Shimul","CSE",50,30);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
