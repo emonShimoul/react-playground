@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        // if the function contains just single line then the curly braces isn't needed.
+        let welcome = (name, age) => `Hello & Welcome ${name} - ${age}`;
+
+
+        // if the function has just one parameter then it can be written without the parenthesis in the parameter.
+        let welcome3 = name => `Hello ${name} !!`;
+
+
+        // if the function contains multiple line then have to use curly braces.
+        let welcome1 = (name, age) => {
+            return `Hello & Welcome ${name} - ${age}`;
+        }
+
+        console.log(welcome("Hitesh Vijay", 32));
+        console.log(welcome1("Emon Shimul", 28));
+        console.log(welcome3("Rashmika"));
+
+        console.log(typeof welcome);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
