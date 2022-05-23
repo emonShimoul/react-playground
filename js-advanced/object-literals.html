@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        // Object literal 1st example
+        let name = "Emon Shimul";
+        let course = "CSE";
+
+        var obj1 = {
+            name,
+            course,
+        };
+        console.log("1st Example:");
+        console.log(obj1);
+
+
+        // Object literal 2nd example
+        let n = "name";
+        var obj2 = {
+            [n] : "Vijay Hitesh",
+            [n + "2nd"] : "Rashmika",
+            course : "IT",
+            detail : function(){
+                return `${this.name2nd} is the student of ${this.course}`
+            }
+        };
+        console.log("2nd Example:");
+        console.log(obj2);
+        console.log(obj2.name2nd);
+        console.log(obj2.detail());
+
+
+        // Object literal 3rd example
+        let n2 = "name";
+        var obj3 = {
+            [n2] : "Vijay Hitesh",
+            [n2 + "2nd"] : "Rashmika",
+            course : "IT",
+            detail(){          // function can be called in this short method                                          
+                return `${this.name} is the student of ${this.course}`  
+            }
+        };
+        console.log("3rd Example:");
+        console.log(obj3);
+        console.log(obj3.name2nd);
+        console.log(obj3.detail());
+        console.log(obj3['detail']()); // function can be called also in this method
+
+
+        // Object literal 4th example
+        let fname = "Arjun";
+        let lname = "Reddy";
+        let course1 = "CS";
+
+        function student(f, l, course){
+            let fullName = f + " " + l;
+            return{fullName, course};    // returns as a object
+        }
+        console.log("4th Example:");
+        console.log(student(fname, lname, course1));
+
+        let s = student(fname, lname, course1);       // returns as object in the s variable
+        console.log(s.fullName);                  // get a single property value
+        console.log(s.course);                  // get a single property value
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
