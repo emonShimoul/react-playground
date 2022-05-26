@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced JS</title>
+    <script>
+        class employee{
+            constructor(name, age, salary){
+                this.empName = name;
+                this.empAge = age;
+                this.empSalary = salary;
+                console.log("Constructor : Employee ");
+            }
+
+            info(){
+                document.write(`<h3>Employee Class</h3>
+                                Name : ${this.empName}<br>
+                                Age : ${this.empAge}<br>
+                                Salary : ${this.empSalary}<br>`);
+            }
+        }
+
+        class manager extends employee{
+            // constructor(name){
+            //     super();      // used to define the parent constructor method. specially used in the inheritance.
+            //     console.log("Constructor : Manager " + name);
+            // }
+
+            info(){
+                // super.info();    // call the info() method of the parent class
+                let ta = 1000;
+                let pa = 300;
+                let totalSalary = this.empSalary + ta + pa;
+                document.write(`<h3>Manager Class</h3>
+                                Name : ${this.empName}<br>
+                                Age : ${this.empAge}<br>
+                                Salary : ${totalSalary}<br>`);
+            }
+        }
+
+        class test extends manager{
+
+        }
+
+        let a = new manager("Hitesh Vijay", 32, 25000);
+        let b = new employee("Emon Shimul", 28, 20000);
+        let c = new test("Rashmika", 30, 22000);
+
+        a.info();
+        b.info();
+        c.info();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
