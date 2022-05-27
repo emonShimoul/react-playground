@@ -1,5 +1,4 @@
 // *********** setInterval() and clearInterval() method (run just one time) ***************
-
 // var a = 0;
 // var id = setInterval(Anim, 500);
 
@@ -15,10 +14,7 @@
     
 // }
 
-
-
 // *********** setTimeout() and clearTimeout() method (run just one time) ***************
-
 // var id2 = setTimeout(Anim2, 5000);
 
 // function Anim2(){
