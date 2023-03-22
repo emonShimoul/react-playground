@@ -39,7 +39,6 @@ class Clock extends Component {
   }
 
   render() {
-    // console.log("Clock rendered!!");
     const {date, locale} = this.state;
     return (
       <div>
@@ -54,7 +53,10 @@ class Clock extends Component {
 
       {/* <button onClick={() => this.handleClick('en-US')}>Click Here</button> */}
 
-      <Button change={this.handleClick} locale="en-US">Click Here</Button>
+      {locale === 'bn-BD' ? 
+      (<Button change={this.handleClick} locale="en-US" show={false} />) : 
+      (<Button change={this.handleClick} locale="bn-BD" show />)}
+
       </div>
     );
   }
