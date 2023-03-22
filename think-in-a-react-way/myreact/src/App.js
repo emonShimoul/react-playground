@@ -2,7 +2,7 @@ import './App.css';
 import Clock from './components/Clock';
 
 function App() {
-  console.log('App rendered!!');
+  // console.log('App rendered!!');
   return (
     <div className="App">
       <header className="App-header">

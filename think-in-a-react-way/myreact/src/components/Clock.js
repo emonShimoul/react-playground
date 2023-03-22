@@ -39,7 +39,7 @@ class Clock extends Component {
   }
 
   render() {
-    console.log("Clock rendered!!");
+    // console.log("Clock rendered!!");
     const {date, locale} = this.state;
     return (
       <div>
