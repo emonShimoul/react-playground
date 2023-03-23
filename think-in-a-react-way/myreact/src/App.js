@@ -1,7 +1,7 @@
 import './App.css';
-import Calculator from './components/CalculateTemp/Calculator';
-import ClockList from './components/ClockList';
-import Form from './components/Form';
+// import Calculator from './components/CalculateTemp/Calculator';
+// import ClockList from './components/ClockList';
+// import Form from './components/Form';
 import Emoji from './components/composition/Emoji';
 import Text from './components/composition/Text';
 import Bracket from './components/composition/Bracket';
