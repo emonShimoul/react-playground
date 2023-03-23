@@ -10,7 +10,7 @@ function App() {
         <Counter>
           {(counter, incrementCount) => (
             <ClickCounter count={counter} incrementCount={incrementCount} />
-          )} 
+          )}
         </Counter>
 
         <Counter>
