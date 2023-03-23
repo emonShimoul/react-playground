@@ -4,7 +4,6 @@ import Counter from './components/Counter';
 import HoverCounter from './components/HoverCounter';
 
 function App() {
-  // const quantities = [1,2,3];
   return (
     <div className="App">
       <header className="App-header">
