@@ -1,7 +1,6 @@
 import React from 'react';
 
-const ClickCounter = (props) => {
-    const {count, incrementCount} = props;
+const ClickCounter = ({count, incrementCount}) => {
     return (
         <div>
             <button type='button' onClick={incrementCount}>Clicked {count} times</button>

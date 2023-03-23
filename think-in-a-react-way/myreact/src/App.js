@@ -7,17 +7,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter 
-          render={(counter, incrementCount) => (
+        <Counter>
+          {(counter, incrementCount) => (
             <ClickCounter count={counter} incrementCount={incrementCount} />
           )} 
-        />
+        </Counter>
 
-        <Counter 
-          render={(counter, incrementCount) => (
+        <Counter>
+          {(counter, incrementCount) => (
             <HoverCounter count={counter} incrementCount={incrementCount} />
-          )} 
-        />
+          )}
+        </Counter>
       </header>
     </div>
   );

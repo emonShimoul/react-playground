@@ -1,7 +1,6 @@
 import React from 'react';
 
-const HoverCounter = (props) => {
-    const {count, incrementCount} = props;
+const HoverCounter = ({count, incrementCount}) => {
     return (
         <div>
             <h1 onMouseOver={incrementCount}>Hovered {count} times</h1>
