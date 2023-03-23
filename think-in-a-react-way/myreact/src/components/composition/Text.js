@@ -1,7 +1,7 @@
 import React from 'react';
 
 const text = ({addEmoji, addBracket}) => {
-    let text = 'I am JS Programming Languale !!';
+    let text = 'I am JS Programming Language !!';
     if(addEmoji){
         text = addEmoji(text, " EMOJI ");
     }

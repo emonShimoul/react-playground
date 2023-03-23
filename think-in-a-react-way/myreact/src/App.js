@@ -1,41 +1,29 @@
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-// import Calculator from './components/CalculateTemp/Calculator';
-// import ClockList from './components/ClockList';
-// import Form from './components/Form';
-// import Emoji from './components/composition/Emoji';
-// import Text from './components/composition/Text';
-// import Bracket from './components/composition/Bracket';
+import Emoji from './components/composition/Emoji';
+import Text from './components/composition/Text';
+import Bracket from './components/composition/Bracket';
 
 function App() {
-  // const quantities = [1,2,3];
   return (
     <div className="App">
       <header className="App-header">
-        {/* <ClockList quantities={quantities} /> */}
-        {/* <Form /> */}
-        {/* <Calculator /> */}
-
-        {/* <Text /> */}
+        
+        <Text />
 
         {/* use of composition in react */}
-        {/* <Emoji>
+        <Emoji>
           {({addEmoji})=> <Text addEmoji={addEmoji}/>}
-        </Emoji> */}
+        </Emoji>
 
         {/* use of composition in multiple and nested component  */}
-        {/* <Emoji>
+        <Emoji>
           {({addEmoji})=> (
             <Bracket>
               {({addBracket})=> <Text addEmoji={addEmoji} addBracket={addBracket}/>}
             </Bracket>
           )}
-        </Emoji> */}
-
-        {/* used for the example of HOC component */}
-        <ClickCounter />
-        <HoverCounter />
+        </Emoji>
+        
       </header>
     </div>
   );
