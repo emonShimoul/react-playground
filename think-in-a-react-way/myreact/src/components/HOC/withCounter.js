@@ -7,7 +7,7 @@ const withCounter = (OriginalComponent) => {
         };
 
         incrementCount = () => {
-            this.setState((prevState) => ({count: prevState.count + 1}));
+            this.setState((prevState) => ({count: prevState.count + 5}));
         };
 
         render(){
