@@ -1,4 +1,5 @@
 import './App.css';
+import Calculator from './components/CalculateTemp/Calculator';
 import ClockList from './components/ClockList';
 import Form from './components/Form';
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <ClockList quantities={quantities} /> */}
-        <Form />
+        {/* <Form /> */}
+        <Calculator />
       </header>
     </div>
   );
