@@ -7,11 +7,22 @@ import ThemeContext from './contexts/themeContext';
 
 class App extends Component {
   state = {
-    theme: 'light'
-  }
+    theme: 'light',
+    switchTheme: () => {
+      this.setState(({theme}) => {
+        if(theme === 'dark'){
+          return {
+            theme: 'light'
+          };
+        }
+        return {
+          theme: 'dark'
+        }
+      });
+    }
+  };
 
   render(){
-    const {theme} = this.state;
     return (
       <div className="App">
         <header className="App-header">
@@ -21,7 +32,7 @@ class App extends Component {
             )}
           </Counter>
   
-          <ThemeContext.Provider value={{theme: theme}}><Section /></ThemeContext.Provider>
+          <ThemeContext.Provider value={this.state}><Section /></ThemeContext.Provider>
         </header>
       </div>
     );
