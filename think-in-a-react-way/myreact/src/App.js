@@ -1,5 +1,6 @@
 import './App.css';
 import Form from './components/Form';
+import Time from './components/Time';
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Form />
+          {/* <Form /> */}
+          <Time />
         </div>
       </header>
     </div>
