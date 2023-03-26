@@ -1,28 +1,22 @@
+import { useState } from 'react';
 import './App.css';
-import Emoji from './components/composition/Emoji';
-import Text from './components/composition/Text';
-import Bracket from './components/composition/Bracket';
+import MyComponent from './components/MyComponent';
+import MyComponentClass from './components/MyComponentClass';
 
 function App() {
+  const [show, setShow] = useState(true);
+
   return (
     <div className="App">
       <header className="App-header">
-        
-        <Text />
-
-        {/* use of composition in react */}
-        <Emoji>
-          {({addEmoji})=> <Text addEmoji={addEmoji}/>}
-        </Emoji>
-
-        {/* use of composition in multiple and nested component  */}
-        <Emoji>
-          {({addEmoji})=> (
-            <Bracket>
-              {({addBracket})=> <Text addEmoji={addEmoji} addBracket={addBracket}/>}
-            </Bracket>
-          )}
-        </Emoji>
+        <div>{show && <MyComponent />}</div>
+        <p>
+          <button type='button' onClick={() => setShow((prevShow) => !prevShow)}>
+            {show ? 'Hide Post' : 'Show Post'}
+          </button>
+        </p>
+        {/* <MyComponentClass /> */}
+        {/* <MyComponent/> */}
         
       </header>
     </div>
