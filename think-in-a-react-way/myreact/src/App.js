@@ -1,16 +1,21 @@
 import './App.css';
-// import Form from './components/Form';
-import Time from './components/Time';
+// import ComplexCounter from './components/ComplexCounter';
+// import CounterThree from './components/CounterThree';
+// import GetPost from './components/GetPost';
+import GetPost2 from './components/GetPost2';
+// import Counter from './components/Counter';
 
 function App() {
 
- 
   return (
     <div className="App">
       <header className="App-header">
         <div>
-          {/* <Form /> */}
-          <Time />
+          {/* <Counter /> */}
+          {/* <ComplexCounter /> */}
+          {/* <CounterThree /> */}
+          {/* <GetPost /> */}
+          <GetPost2 />
         </div>
       </header>
     </div>
