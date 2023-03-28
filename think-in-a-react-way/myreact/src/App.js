@@ -1,13 +1,11 @@
-import './App.css';
+import './assets/css/global.css';
+import Logo from './components/Logo';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello React !!</h1>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <div className="App">
+            <h1>Learn with Sumit</h1>
+            <Logo />
+        </div>
+    );
 }
-
-export default App;
