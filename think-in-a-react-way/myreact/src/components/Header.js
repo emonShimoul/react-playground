@@ -15,6 +15,11 @@ export default function Header() {
             Posts
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/dashboard" className={(navInfo) => (navInfo.isActive ? classes.active : "")}>
+            Dashboard
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
