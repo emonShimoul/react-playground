@@ -46,7 +46,6 @@ const useVideoList = (page) => {
         setError(true);
       }
     }
-
     fetchVideos();
   }, [page]);
 
